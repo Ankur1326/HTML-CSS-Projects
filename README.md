@@ -6,3 +6,5 @@ A collection of frontend web development projects built using HTML and CSS
 <hr />
 <h1>2. 04Feb-23-project</h1>
    Live link - https://645fc0079873bb6078da02de--frabjous-mochi-f50a64.netlify.app/
+<hr />
+<h1>3. 05Feb-project</h1>
