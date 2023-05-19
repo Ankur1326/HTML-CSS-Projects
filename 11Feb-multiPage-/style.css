@@ -1,0 +1,180 @@
+/* default css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(11, 187, 120);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./images/stethoscope.png");
+    /* background-position: ; */
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+/*------------------------- nav ---------------------------*/
+nav {
+    /* margin: 0 20px; */
+    width: 85%;
+    height: 12vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo  */
+nav img {
+    cursor: pointer;
+    width: 160px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    margin-right: 12%;
+}
+
+ul li {
+    list-style-type: none;
+    position: relative;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 1.02;
+    font-weight: 600;
+    color: #000000;
+    border: 1px solid transparent;
+    transition: all .2s ease;
+}
+
+ul li a:hover {
+    color: var(--main-color);
+}
+
+
+ul li:nth-child(1) a {
+    color: var(--main-color);
+}
+
+ul li:nth-child(1) a::after {
+    content: " ";
+    width: 8px;
+    height: 8px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    color: aqua;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*-------------------- main section  ------------------------*/
+main {
+    width: 90%;
+    height: 88vh;
+    margin-left: 7%;
+    /* margin: auto; */
+    justify-self: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* leftSection */
+.leftSection {
+    width: 570px;
+    height: auto;
+    position: relative;
+}
+
+.leftSection h1 {
+    /* width: 80%; */
+    font-size: 3.5rem;
+    margin-bottom: 16px;
+    line-height: 70px;
+}
+
+.leftSection p {
+    font-size: .8rem;
+}
+
+button {
+    font-weight: bold;
+    padding: 18px 40px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 35px;
+    margin-top: 25px;
+    border: 2px solid transparent;
+    transition: all .3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #ffff;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+/* bottom Angle img  */
+.leftSection img[alt="bottomAngle"] {
+    position: absolute;
+    bottom: 8%;
+    right: 7%;
+}
+
+/* bottom mouse img */
+.leftSection img:last-child {
+    /* width: 10px; */
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+}
+
+
+/*--------- right section -------- */
+
+.rightSection {
+    width: 47%;
+    /* position: relative; */
+}
+
+.rightSection img{
+    bottom: 0;
+}   
+
+.rightSection img:first-child {
+    position: absolute;
+    width: 35%;
+    bottom: 0;
+    right: 0;
+}
+
+.rightSection img:nth-child(2) {
+    /* display: none; */
+    position: absolute;
+    width: 33%;
+    bottom: 0;
+    right: -5%;
+}
+
+.rightSection img:last-child {
+    max-width: 34%;
+    /* max-width: 420px; */
+    /* max-width: 34vw; */
+    position: absolute;
+    right: 0;
+}

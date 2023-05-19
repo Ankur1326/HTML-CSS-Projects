@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}   
+
+.hero_section {
+    background-image: url("developer.png");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.text_container {
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 36px
+}
+
+.larg_text {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.black_box {
+    background-color: #000;
+    padding: 20PX;
+    color: white;
+
+}
+.black_box h2 {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* grid-template-columns: auto auto auto; */
+    /* margin: 20px 0; */
+    max-width: 1305px;
+    margin: 20px auto;
+    
+}
+
+.card  {
+    max-width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 7px 4px 7px gray;
+    transition:all 0.6s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition:all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.work .grid_item .card .card_container  h3 {
+    text-align: center;
+}
+.work .grid_item .card .card_container  p {
+    text-align: center;
+}
+
+.grid_item {
+    /* padding: 0px 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_section {
+    display: flex;
+}
+
+.contact {
+    background-color: #515603;
+    color: white;
+    /* text-align: center; */
+    padding: 40px;
+}
+.about {
+    background-color: #b85b09;
+    color: white;
+    /* text-align: center; */
+    padding: 40px;
+}
+
+.contact, .about {
+    /* max-height: 300px; */
+}
+
+.contact h2, 
+.about h2 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.contact p, 
+.about p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #000;
+    height: 80px;
+    padding: 30px;
+}
+
+@media (max-width: 786px) {
+    .hero_section {
+        min-height: 50vh;
+    }
+    .text_container {
+        padding: 10px 0;
+        text-align: center;
+    }
+    .larg_text {
+        font-size: 32px;
+    }
+    .black_box h2 {
+        font-size: 24px;
+    }
+    
+    .black_box h2 span {
+        font-size: 32px;
+        font-weight: 400px;
+    } 
+    
+    .bottom_section {
+        flex-direction: column;
+    }
+    
+    .contact h2, 
+    .about h2 {
+        font-size: 32px;
+        font-weight: 300;
+    }
+    
+    .grid_item {
+        margin: 20px 0;
+    }
+  
+}
