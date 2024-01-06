@@ -60,7 +60,6 @@ ul li a:hover {
     color: var(--main-color);
 }
 
-
 ul li:nth-child(1) a {
     color: var(--main-color);
 }
